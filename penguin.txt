@@ -1,0 +1,51 @@
+function setup() {
+  createCanvas(200, 200); 
+  background(210);
+}
+
+function draw() {
+
+  //guidelines
+  strokeWeight(0.5);
+  line(100,0,100,200);
+  line(0,100,200,100);
+
+
+  //body
+  strokeWeight(0);
+  fill(54, 73, 138);
+  ellipse(100,100,70,90);//outer
+
+  fill(255);
+  ellipse(100,100,50,70);//inner
+
+  //head
+  fill(54, 73, 138);//blue ish
+  ellipse(100,50,50);//outer
+
+  strokeWeight(20);
+  stroke(255);
+  arc(100,50, 30,50,0,PI);//inner
+
+  //eyes
+  strokeWeight(0);
+  fill(0);
+  ellipse(85,50,6);//left eye
+  ellipse(115,50,6);//right eye
+
+  //beak
+  fill(230, 166, 39);
+  ellipse(100,58,15,10);
+
+  //feet
+  ellipse(85,143,20,12);//left foot
+  ellipse(115,143,20,12);//right foot
+
+  //flippers
+  fill(80, 104, 186);
+  ellipse(68,100,10,50);//left flipper
+
+  ellipse(132, 100, 10 ,50);//right flipper
+
+
+}
